@@ -1,7 +1,7 @@
-<%@ page import="project.ConnectionProvider"%>
-<%@ page import="java.sql.*"%>
-<%include file="adminHeader.jsp" %>
-<%include file="../footer.jsp" %>
+<%@page import="project.ConnectionProvider"%>
+<%@page import="java.sql.*"%>
+<%@include file="adminHeader.jsp" %>
+<%@include file="../footer.jsp" %>
 <html>
 <head>
 <link rel="stylesheet" href="../css/addNewProduct-style.css">
@@ -21,6 +21,7 @@ if("wrong".equals(msg))
 %>
 <h3 class="alert">Some thing went wrong! Try Again!</h3>
 <%} %>
+<%
 int id=1;
 try{
 	Connection con=ConnectionProvider.getCon();
