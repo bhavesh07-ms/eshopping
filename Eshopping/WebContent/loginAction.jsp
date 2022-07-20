@@ -30,3 +30,4 @@ else{
 		response.sendRedirect("login.jsp?msg=invalid");
 	}
 }
+%>

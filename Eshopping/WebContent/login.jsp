@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -20,6 +21,7 @@
   <%
   String msg=request.getParameter("msg");
   if("notexist".equals(msg))
+  {
   %>
   <h1>Incorrect Username or Password</h1>
 <%} %>
